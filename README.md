@@ -7,11 +7,11 @@
 ## Execute
 
 ```
-% ./grn_hash_bench.o 1000000
+% ./grn_hash_bench 1000000
 add time = 0.370000[s]
 get time = 0.280000[s]
 
-% ./tchdb_bench.o 1000000
+% ./tchdb_bench 1000000
 add time = 0.530000[s]
 get time = 0.540000[s]
 
