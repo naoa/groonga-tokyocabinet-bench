@@ -8,7 +8,7 @@ int main(int argc, char **argv){
   TCHDB *hdb;
   int ecode;
   int i;
-  char s1[16] = {'\0'};
+  char s1[17] = {'\0'};
   clock_t start,end;
   if(argc == 1){
     printf("input roop count\n");
