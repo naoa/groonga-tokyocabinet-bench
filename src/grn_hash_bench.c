@@ -21,7 +21,7 @@ main(int argc, char **argv)
   int roop_c = atoi(argv[1]);
 
   int i;
-  char s1[16] = {'\0'};
+  char s1[17] = {'\0'};
   clock_t start,end;
   
   if (grn_init()) {
