@@ -15,10 +15,10 @@ main(int argc, char **argv)
   void *value = NULL;
   int added = 0;
   if(argc == 1){
-    printf("input roop count\n");
+    printf("input loop count\n");
     return -1;
   }
-  int roop_c = atoi(argv[1]);
+  int loop_c = atoi(argv[1]);
 
   int i;
   char s1[17] = {'\0'};
@@ -46,7 +46,7 @@ main(int argc, char **argv)
   }
 
   start = clock();
-  for (i=0;i<roop_c;i++) {
+  for (i=0;i<loop_c;i++) {
     sprintf(s1, "%016d", i);
     grn_hash_add(&ctx, hash, s1, strlen(s1), &value, &added);
     if (added) {
@@ -57,7 +57,7 @@ main(int argc, char **argv)
   printf("add time = %f[s]\n", (double)(end-start)/CLOCKS_PER_SEC);
 
   start = clock();
-  for (i=0;i<roop_c;i++) {
+  for (i=0;i<loop_c;i++) {
     sprintf(s1, "%016d", i);
     grn_hash_get(&ctx, hash, s1, strlen(s1), &got_value);
   }
